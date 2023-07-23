@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Equipos Tecnológicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            background-color: #444;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-item {
+            margin: 10px;
+        }
+
+        .product-image {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venta de Equipos Tecnológicos</h1>
+    </header>
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Productos">Productos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Servicios</h2>
+         <div class="product-gallery">
+            <div class="product-item">
+                <img class="product-image" src="img/ssd.jpg" alt="SSD">
+                    <h3>SSD 1TB</h3>
+            </div>
+            <div class="product-item">
+                <img class="product-image" src="img/switch.jpg" alt="Switch Hogar">
+                    <h3>Switch TP-link</h3>
+            </div>
+            <div class="product-item">
+                <img class="product-image" src="img/lt.jpg" alt="Laptop">
+                <h3> Dell Latitude </h3>
+            </div>
+         </div>
+    </main>
+    <aside>
+        <h2>Acerca de mí</h2>
+        <p>Nombre: Hendry Guzmán</p>
+        <p>Profesión: Analista de TI</p>
+        <p>Edad: 25</p>
+        <p>Residencia: Santiago</p>
+    </aside>
+
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </footer>
+</body>
+</html>
