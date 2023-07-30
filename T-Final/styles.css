@@ -1,0 +1,395 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    margin-left: 10px; /* Mueve el nombre de la empresa a la esquina derecha */
+    font-size: 22px; /* Ajusta el tamaño del nombre de la empresa según tus preferencias */
+    color: royalblue; /* Ajusta el color del texto según tu diseño */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 7px;
+    padding: 0;
+    display: flex;
+    padding: 0 50px;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: royalblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.logo-link {
+    display: block;
+    position: absolute;
+    top: 2px; /* Ajusta el posicionamiento vertical según tus necesidades */
+    left: 15px; /* Ajusta el posicionamiento horizontal según tus necesidades */
+}
+
+.logo-image {
+    width: 50px; /* Ajusta el tamaño del logotipo según tus necesidades */
+    height: auto;
+    transition: transform 0.2s ease-in-out; /* Agrega la transición para el efecto de lupa */
+}
+
+.logo-link:hover .logo-image {
+    transform: scale(1.2); /* Ajusta el valor para el efecto de lupa */
+}
+
+.home-section {
+    position: relative;
+    height: 500px; /* Ajusta la altura según tu preferencia */
+    background-image: url('img/home.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+  .home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de superposición transparente */
+  }
+  
+  .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  #productos-section {
+    position: relative;
+    height: 500px;
+    background-image: url('img/productos.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .productos-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Color de superposición transparente */
+}
+
+  .productos-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+.product-grid :hover{
+    background-color: lightslategray;
+    transform: scale(1.1);
+}
+  
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  .product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-item p {
+    font-size: 14px;
+    color: white;
+  }
+
+  #servicios-section {
+    position: relative;
+    height: 500px;
+    background-image: url('img/servicios.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .servicios-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Color de superposición transparente */
+}
+
+  .servicios-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+  .servicios-content h1 {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 40px;
+}
+  .service-card {
+    border: 1px solid #ddd;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: justify;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .service-card h3 {
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration:underline;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: white;
+  }
+  #sobre-nosotros-section {
+    position: relative;
+    height: 500px;
+    background-image: url('img/sobre-nosotros.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .sobre-nosotros-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Color de superposición transparente */
+}
+
+  .sobre-nosotros-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+  .sobre-nosotros-content h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 40px;
+}
+
+.mission-vision-values {
+    display:inline-flexbox;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 20%;
+  }
+  
+  .mission h3, .vision h3, .values h3 {
+    color: lightsalmon;
+    font-size: 20px;
+    margin-bottom: -1%;
+  }
+  
+  .values ul {
+    list-style-type: square;
+  }
+
+  #contacto-section {
+    position: relative;
+    height: 500px;
+    background-image: url('img/contact.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .contacto-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Color de superposición transparente */
+}
+
+  .contacto-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+  .contacto-content h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 40px;
+}
+
+.contact-info {
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 10%;
+    font-size: 30px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+.contact-info strong {
+    color: royalblue;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .cta-button:hover{
+    transform: scale(1.2); 
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: whitesmoke
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilos para los enlaces de las redes sociales */
+  .social-links {
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  .social-link {
+    color: royalblue;
+    text-decoration: wavy;
+    margin: 0 10px;
+    align-content: space-evenly;
+  }
+
+  .social-links :hover {
+    transform: scale(1.2);
+  }
+
+  .social-link i {
+    margin-right: 5px;
+  }
